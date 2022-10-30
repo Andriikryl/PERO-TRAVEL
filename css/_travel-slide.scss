@@ -1,0 +1,65 @@
+.travel-slide{
+    margin-block-start: -120px;
+    padding-block-end: 150px;
+}
+
+.item__one{
+  background-image: url(../images/travel_slider/one.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item__two{
+  background-image: url(../images/travel_slider/two.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+  .gallery {
+    grid-column: full;
+    display: grid;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+  
+  .gallery::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .gallery .wrapper {
+    grid-column: content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .gallery .item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+    inline-size: 100%;
+    max-inline-size: 25rem;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+
+  /**ANIMATION__FILTER**/
+
+  .wrapper:hover .item:not(:hover) {
+    filter: grayscale(100%);
+  }
+  
+  .item {
+    pointer-events: auto;
+    transition: filter 500ms ease-in;
+  }
+  
+    /**ANIMATION__OPACITY**/
+
+  

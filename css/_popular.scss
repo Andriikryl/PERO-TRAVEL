@@ -1,0 +1,137 @@
+.popular{
+    padding-block-end: 100px;
+    .popular__control{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block-end: 90px;
+        .popular__control-titel{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #0499DD;
+        }
+        .popular__control-btn{
+            background-color: transparent;
+            border: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            text-decoration-line: underline;
+            color: #282828;
+        }
+    }
+    .popular__box{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .popular__card{
+            max-width: 360px;
+            border-radius: 10px;
+            .card__info{
+                padding-block: 211px 44px;
+                padding-inline-start: 16px;
+                .card__titel{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #FFFFFF;
+                }
+                .card__titel-desc{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFC700;        
+                    padding-block-end: 10px;            
+                }
+                .card__inner-box{
+                    display: flex;
+                    align-items: center;
+                    gap: 13px;
+                    padding-block-end: 20px;
+                    .card__info-time{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #FFFFFF;
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+                        &::before{
+                            content: "";
+                            display: inline-block;
+                            background-image: url(../images/popular/clock\ 15.svg);
+                            background-size: cover;
+                            width: 12px;
+                            height: 12px;
+                        }
+                    }
+                    .card__info-price{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #FFFFFF;
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+                        &::before{
+                            content: "";
+                            display: inline-block;
+                            background-image: url(../images/popular/price.svg);
+                            background-size: cover;
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+
+                .card__text{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #FFFFFF;   
+                    padding-block-end: 20px;                 
+                }
+                
+            }
+            
+        }
+    }
+}
+
+
+/**CARD__BG**/
+
+.card__bg{
+    background-image: url(../images/popular/Rectangle\ 13.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card__bg-two{
+    background-image: url(../images/popular/two.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card__bg-three{
+    background-image: url(../images/popular/three.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/**CARD__BG**/

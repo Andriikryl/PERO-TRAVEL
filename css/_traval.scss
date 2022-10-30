@@ -1,11 +1,10 @@
 .travel{
     background-image: url(../images/header/bg.jpg);
     background-size: cover;
-    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    position: absolute;
+    margin-block-start: -110px;
     top: 0;
     .travel__box{
         padding-block-start: 237px;

@@ -40,13 +40,17 @@
 }
 
 .small__btn-style{
-    background-color:linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+    background:linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     color: #FFFFFF;
+    transition: 500ms ease-in;
+    &:hover{
+        color: #FFC700;
+    }
 }
 
 // BTN
