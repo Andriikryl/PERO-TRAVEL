@@ -1,5 +1,5 @@
 .container{
-    $max-width: 1050px;
+    $max-width: 1250px;
     $padding: 1rem;
     width: min($max-width, 100% - $padding);
     margin-inline: auto;
@@ -51,6 +51,11 @@
     &:hover{
         color: #FFC700;
     }
+}
+
+.btn__box{
+    display: flex;
+    justify-content: center;
 }
 
 // BTN

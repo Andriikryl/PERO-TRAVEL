@@ -1,0 +1,105 @@
+.wiev{
+    padding-block-end: 150px;
+    .wiev__titel{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #0499DD;       
+        padding-block-end: 90px; 
+    }
+    .wiev__text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #282828;
+        padding-block-end: 20px;
+    }
+    .wiev__box{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-block-end: 60px;
+        flex-wrap: wrap;
+        .wiev__card{
+            display: flex;
+            gap: 20px;
+            max-width: 550px;
+            .card__titel{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                color: #0499DD;
+                padding-block-end: 10px;
+            }
+            .card__text{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #282828;                
+            }
+        }
+    }
+}
+
+
+
+.wie__card-one{
+    &::before{
+        content: "";
+        display: inline-block;
+        background-image: url(../images/wiev/1.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 365px;
+        height: 74px;
+    }
+}
+
+.wie__card-two{
+    &::before{
+        content: "";
+        display: inline-block;
+        background-image: url(../images/wiev/2.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 365px;
+        height: 74px;
+    }
+}
+
+.wie__card-three{
+    &::before{
+        content: "";
+        display: inline-block;
+        background-image: url(../images/wiev/3.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 365px;
+        height: 74px;
+    }
+}
+
+.wie__card-four{
+    &::before{
+        content: "";
+        display: inline-block;
+        background-image: url(../images/wiev/4.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 427px;
+        height: 74px;
+    }
+}
