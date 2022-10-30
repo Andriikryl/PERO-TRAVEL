@@ -1,0 +1,65 @@
+.travel{
+    background-image: url(../images/header/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    .travel__box{
+        padding-block-start: 237px;
+        position: relative;
+        .travel__titel{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 88px;
+            color: #FFFFFF;
+            position: relative;
+            span{
+                font-family: 'mr_KindlyJasmineG';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 64px;
+                color: #FFC700;
+                position:absolute;
+                top: 50px;
+                left: 465px;
+            }
+        }
+        .travel__soc{
+            position: absolute;
+            right: clamp(-8rem, -10.909rem + 14.55vw, 0rem);
+            top: 300px;
+            .soc__list{
+                *+*{
+                    padding-block-start: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+.travel__btn{
+position: relative;
+top: -240px;
+}
+
+
+svg text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 117px;
+	fill: hsla(0, 0%, 100%, 1);
+    transition: 500ms ease-in;
+    &:hover{
+        fill: #FFC700;
+    }
+}
+

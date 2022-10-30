@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Marko+One&family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <a class="header__logo" href="#">
+                    <img src="images/header/лого.svg" alt="#">
+                </a>
+
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a class="header__link" href="#">Главная</a></li>
+                        <li class="header__item"><a class="header__link" href="#">Экскурсии</a></li>
+                        <li class="header__item"><a class="header__link" href="#">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="travel">
+        <div class="container">
+            <div class="travel__box">
+                <h1 class="travel__titel">ПУТЕШЕСТВУЙ <br> <span>вместе с</span></h1>
+                <svg width="900" height="450" viewBox="0 0 900 450">
+                    <filter id="myFilter">
+                        <feMorphology operator="dilate" radius="2" 
+                        in="SourceGraphic" result="THICKNESS" />
+                        <feComposite operator="out" in="THICKNESS" in2="SourceGraphic" ></feComposite>
+                    </filter>
+                    
+                    <text dx="10" dy="90" filter="url(#myFilter)" letter-spacing="10px">PERO TRAVEL</text>
+                </svg>
+                
+
+                <button class="travel__btn  | main__btn | main__btn-style">К экскурсиям</button>
+                <div class="travel__soc">
+                    <ul class="soc__list">
+                        <li class="soc__item"><a class="travel__link" href="#">
+                            <img src="images/travel/vk 1.svg" alt="#">
+                        </a></li>
+                        <li class="soc__item"><a class="travel__link" href="#">
+                            <img src="images/travel/inst 1.svg" alt="#">
+                        </a></li>
+                        <li class="soc__item"><a class="travel__link" href="#">
+                            <img src="images/travel/facebook 1.svg" alt="#">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    
+</body>
+</html>
