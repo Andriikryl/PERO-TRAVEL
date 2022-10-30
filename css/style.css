@@ -426,4 +426,41 @@ svg text:hover {
   background-repeat: no-repeat;
 }
 
-/**CARD__BG**//*# sourceMappingURL=style.css.map */
+/**CARD__BG**/
+.about-us {
+  background-image: url(../images/about-us/Rectangle\ 4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-margin-after: 150px;
+          margin-block-end: 150px;
+  width: 70%;
+  padding-block: 137px;
+}
+.about-us .about-us__box {
+  position: relative;
+  right: -700px;
+  max-width: 542px;
+  background: #EDEDED;
+  border-radius: 10px;
+  padding: 61px 75px 85px 85px;
+}
+.about-us .about-us__box .about__us-titel {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0499DD;
+  -webkit-padding-after: 40px;
+          padding-block-end: 40px;
+}
+.about-us .about-us__box .about__us-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+}/*# sourceMappingURL=style.css.map */
