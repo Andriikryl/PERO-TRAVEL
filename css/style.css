@@ -168,6 +168,15 @@ select {
 }
 
 /**MODUL-CONTROL**/
+.footer__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
+}
+
 .header {
   padding-block: 26px;
   position: relative;
@@ -623,4 +632,34 @@ svg text:hover {
   font-size: 14px;
   line-height: 17px;
   color: #282828;
+}
+
+.footer {
+  padding-block: 30px;
+}
+.footer .footer__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer .footer__box .footer__nav * + * {
+  -webkit-padding-before: 8px;
+          padding-block-start: 8px;
+}
+.footer .footer__box .footer__nav .footer__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
+}
+
+.footer__inner-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  -webkit-padding-before: 20px;
+          padding-block-start: 20px;
 }/*# sourceMappingURL=style.css.map */
