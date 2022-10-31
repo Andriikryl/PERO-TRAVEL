@@ -1,0 +1,48 @@
+.comments{
+    padding-block-end: 150px;
+    .comments__box{
+        display: flex;
+        gap: 20px;
+        .comments__card{
+            background-color: hsla(0, 0%, 93%, 1);
+            border-radius: 10px;
+            max-width: 740px;
+            padding: 38px 27px 39px 45px;
+            display: flex;
+            gap: 28px;
+            position: relative;
+            &::after{
+                content: "";
+                display: inline-block;
+                background-image: url(../images/comments/qoters.svg);
+                background-size: cover;
+                width: 197px;
+                height: 164px;
+                position: absolute;
+                z-index: 22;
+                right: 0;
+                top: 107px;
+            }
+            .comments__info{
+                max-width: 395px;
+                .comments__name{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #282828;
+                    padding-block-end: 20px;
+                }
+                .comments__text{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #282828;                    
+                }
+            }
+        }
+    }
+}
