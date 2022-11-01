@@ -3,6 +3,7 @@
     .footer__box{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
         flex-wrap: wrap;
         .footer__nav{

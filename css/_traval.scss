@@ -14,6 +14,7 @@
             font-style: normal;
             font-weight: 700;
             font-size: 72px;
+            font-size: clamp(20px, 7vw - 1rem, 72px);
             line-height: 88px;
             color: #FFFFFF;
             position: relative;
@@ -27,11 +28,17 @@
                 position:absolute;
                 top: 50px;
                 left: 465px;
+                @media (max-width: 900px){
+                    left: 200px;
+                }
+                @media (max-width: 540px){
+                    left: 3px;
+                }
             }
         }
         .travel__soc{
             position: absolute;
-            right: clamp(-8rem, -10.909rem + 14.55vw, 0rem);
+            right: clamp(-8rem, 12.909rem + 14.55vw, 6rem);
             top: 300px;
             .soc__list{
                 *+*{
@@ -45,9 +52,21 @@
 
 .travel__btn{
 position: relative;
+left: 0;
 top: -240px;
 }
 
+svg{
+    @media (max-width: 900px){
+        max-width: 400px;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+    @media (max-width: 500px){
+        max-width: 320px;
+    }
+}
 
 svg text{
     font-family: 'Montserrat';
@@ -57,6 +76,9 @@ svg text{
     line-height: 117px;
 	fill: hsla(0, 0%, 100%, 1);
     transition: 500ms ease-in;
+    @media (max-width: 900px){
+        font-size: clamp(60px, 5vw - 1rem, 200px);
+    }
     &:hover{
         fill: #FFC700;
     }

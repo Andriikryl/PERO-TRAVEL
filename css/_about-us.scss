@@ -1,13 +1,15 @@
 .about-us{
     background-image: url(../images/about-us/Rectangle\ 4.jpg);
     background-size: cover;
+    height: 90vh;
     background-repeat: no-repeat;
     margin-block-end: 150px;
+    position: relative;
     width: 70%;
     padding-block: 137px;
     .about-us__box{
-        position: relative;
-        right: -700px;
+        position: absolute;
+        right: clamp(-100px, -200px + 14.55vw, -700px);
         max-width: 542px;
         background: #EDEDED;
         border-radius: 10px;

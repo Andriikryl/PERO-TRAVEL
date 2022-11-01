@@ -4,6 +4,7 @@
     .popular__box{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 20px;
         .popular__card{
             max-width: 360px;

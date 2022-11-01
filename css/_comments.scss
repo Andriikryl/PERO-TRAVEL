@@ -2,6 +2,8 @@
     padding-block-end: 150px;
     .comments__box{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
         .comments__card{
             background-color: hsla(0, 0%, 93%, 1);

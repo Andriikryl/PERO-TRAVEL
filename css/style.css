@@ -201,10 +201,109 @@ select {
   color: #FFFFFF;
   transition: 500ms ease-in;
 }
+@media (max-width: 900px) {
+  .header .header__box .header__list .header__link {
+    font-size: 34px;
+    color: black;
+  }
+}
 .header .header__box .header__list .header__link:hover {
   color: #FFC700;
 }
 
+.burger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  display: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 30;
+}
+
+.burger__line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #FFC700;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFC700;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger--active .burger__line {
+  opacity: 0;
+}
+
+.burger--active::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.burger--active::after {
+  bottom: auto;
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .burger {
+    display: block;
+  }
+  .header__nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    overflow-y: auto;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out;
+  }
+  .nav--visible {
+    transform: none;
+  }
+  .header__list {
+    flex-direction: column;
+    padding: calc((1vw + 1vh) * 3) calc((1vw + 1vh) * 7.5);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .header__item {
+    padding: 40px 30px;
+  }
+}
 .travel {
   background-image: url(../images/header/bg.jpg);
   background-size: cover;
@@ -225,6 +324,7 @@ select {
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
+  font-size: clamp(20px, 7vw - 1rem, 72px);
   line-height: 88px;
   color: #FFFFFF;
   position: relative;
@@ -240,9 +340,19 @@ select {
   top: 50px;
   left: 465px;
 }
+@media (max-width: 900px) {
+  .travel .travel__box .travel__titel span {
+    left: 200px;
+  }
+}
+@media (max-width: 540px) {
+  .travel .travel__box .travel__titel span {
+    left: 3px;
+  }
+}
 .travel .travel__box .travel__soc {
   position: absolute;
-  right: clamp(-8rem, -10.909rem + 14.55vw, 0rem);
+  right: clamp(-8rem, 12.909rem + 14.55vw, 6rem);
   top: 300px;
 }
 .travel .travel__box .travel__soc .soc__list * + * {
@@ -252,7 +362,22 @@ select {
 
 .travel__btn {
   position: relative;
+  left: 0;
   top: -240px;
+}
+
+@media (max-width: 900px) {
+  svg {
+    max-width: 400px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+  }
+}
+@media (max-width: 500px) {
+  svg {
+    max-width: 320px;
+  }
 }
 
 svg text {
@@ -263,6 +388,11 @@ svg text {
   line-height: 117px;
   fill: hsl(0deg, 0%, 100%);
   transition: 500ms ease-in;
+}
+@media (max-width: 900px) {
+  svg text {
+    font-size: clamp(60px, 5vw - 1rem, 200px);
+  }
 }
 svg text:hover {
   fill: #FFC700;
@@ -339,6 +469,7 @@ svg text:hover {
 .popular .popular__box {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .popular .popular__box .popular__card {
@@ -447,15 +578,17 @@ svg text:hover {
 .about-us {
   background-image: url(../images/about-us/Rectangle\ 4.jpg);
   background-size: cover;
+  height: 90vh;
   background-repeat: no-repeat;
   -webkit-margin-after: 150px;
           margin-block-end: 150px;
+  position: relative;
   width: 70%;
   padding-block: 137px;
 }
 .about-us .about-us__box {
-  position: relative;
-  right: -700px;
+  position: absolute;
+  right: clamp(-100px, -200px + 14.55vw, -700px);
   max-width: 542px;
   background: #EDEDED;
   border-radius: 10px;
@@ -519,6 +652,11 @@ svg text:hover {
   display: flex;
   gap: 20px;
   max-width: 550px;
+}
+@media (max-width: 900px) {
+  .wiev .wiev__box .wiev__card {
+    max-width: 320px;
+  }
 }
 .wiev .wiev__box .wiev__card .card__titel {
   font-family: "Montserrat";
@@ -589,6 +727,8 @@ svg text:hover {
 }
 .comments .comments__box {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 .comments .comments__box .comments__card {
@@ -640,6 +780,7 @@ svg text:hover {
 .footer .footer__box {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   flex-wrap: wrap;
 }
